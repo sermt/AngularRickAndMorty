@@ -1,0 +1,7 @@
+<div class="modal-overlay" (click)="closeModal()">
+  <div class="modal-container">
+    <h1>{{characterData.name}}</h1>
+    <img [src]="characterData.image" [alt]="characterData.name" class="img-responsive">
+    <button class="close-button" (click)="closeModal()">Close</button>
+  </div>
+</div>

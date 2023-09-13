@@ -1,0 +1,16 @@
+<table >
+  <caption>
+   Characters from Rick and Morty
+  </caption>
+  <tr>
+    <th *ngFor="let title of titles">{{title}}</th>
+  </tr>
+  <tr
+    *ngFor="let character of characters"
+    (click)="sendData(character.image, character.name)"
+  >
+    <td class="cell">{{ character.id }}</td>
+    <td>{{ character.name }}</td>
+    <td>{{ character.gender }}</td>
+  </tr>
+</table>
